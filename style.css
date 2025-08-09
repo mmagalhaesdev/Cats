@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: auto;
+}
+
+.line{
+    padding: 1px;
+    background-color: #F5F5F5;
+}
+
+.toggle{
+  width: 25px;
+  height: 3px;
+  background-color: #FF6554;
+  margin-bottom: 3px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+    
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    padding-left: 100px;
+    padding-top: 19px;
+}
+.meuToggle{
+    padding-left: 930px;
+}
+.formulario{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  
+}
+.form{
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    padding: 30px;
+    border-radius: 12px;
+}
+.form input{
+    width: 260px;
+    height: 30px;
+    font-size: 15px; 
+    font-family: Roboto Condensed;
+    padding-left: 10px;
+    border-radius: 6px;
+     border: 2px solid #FF6554;
+}
+.form h2{
+    font-size: 30px; 
+    font-family: Roboto Condensed;
+    color: #FF6554;
+}
+.form p, a{
+      font-family: Roboto Condensed;
+       font-size: 15px; 
+       text-decoration: none;
+       color: black;
+}
+.form button{
+    width: 120px;
+    height: 40px;
+    background: #FFA255;
+    color: white;
+    border: 1px solid #FF6554;
+    border-radius: 6px;
+}
