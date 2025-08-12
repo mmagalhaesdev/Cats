@@ -5,33 +5,15 @@
 }
 .container{
     margin: auto;
-}
-
-.line{
-    padding: 1px;
-    background-color: #F5F5F5;
-}
-
-.toggle{
-  width: 25px;
-  height: 3px;
-  background-color: #FF6554;
-  margin-bottom: 3px;
-  border-radius: 12px;
-  cursor: pointer;
-}
-    
-.flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 3px solid #F5F5F5;
 }
+
 .logo{
     padding-left: 100px;
     padding-top: 19px;
-}
-.meuToggle{
-    padding-left: 930px;
 }
 .formulario{
     padding-top: 50px;
@@ -72,4 +54,66 @@
     color: white;
     border: 1px solid #FF6554;
     border-radius: 6px;
+}
+
+.menuToggle {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  padding-right: 120px;
+
+}
+
+.toggle {
+  width: 22px;
+  height: 3px;
+  background: #FF6554;
+  margin-right: 10px;
+  position: absolute;
+  border-radius: 4px;
+  cursor: pointer;
+  top: 12px;
+  left: 4px;
+  transition: 0.5s;
+}
+
+.toggle:before {
+  content: "";
+  width: 22px;
+  height: 3px;
+  background: #FFA255;
+  margin-right: 10px;
+  position: absolute;
+  top: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.toggle:after {
+  content: "";
+  width: 22px;
+  height: 3px;
+  background: #FFA255;
+  margin-right: 10px;
+  position: absolute;
+  bottom: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.toggle.active {
+  transform: rotateZ(-45deg);
+}
+
+.toggle.active::before {
+  top: 0;
+  transform: rotateZ(90deg);
+}
+
+.toggle.active::after {
+  bottom: 0;
+  transform: rotateZ(90deg);
 }

@@ -10,16 +10,12 @@
 
 <header>
     <div class="container">
-        <div class="flex">
             <div class="logo">
                 <img src="../Imagens/logo.png">
             </div>
-            <div class="meuToggle">
-                <div class="toggle"></div>
-                <div class="toggle"></div>
+             <div class="menuToggle">
                 <div class="toggle"></div>
             </div>
-        <div>
     </div>
 </header>
 
@@ -40,6 +36,6 @@
         <p><a href="../View/login.php">Já tem conta? <spam style="color: #FFA255"> Faça login </spam> </a></p>
     </div>
 </div>
-
+<script src="../touggle.js"></script>
 </body>
 </html>
