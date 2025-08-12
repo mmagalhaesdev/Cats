@@ -34,6 +34,6 @@
         </form>
     </div>
 </div>
-<script src="../Script/touggle.js"></script>
+<script src="../Script/toggle.js"></script>
 </body>
 </html>
