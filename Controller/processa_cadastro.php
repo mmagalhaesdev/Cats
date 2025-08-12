@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include '../Model/db.php';
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 $confirmar = $_POST['confirmar_senha'];
@@ -13,7 +13,7 @@ $sql = "INSERT INTO usuario (email, senha) VALUES (?, ?)";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ss", $email, $senha_hash);
 if ($stmt->execute()) {
-echo "Cadastro realizado com sucesso. <a href='login.php'>Fazer login</a>";
+echo "Cadastro realizado com sucesso. <a href='../View/login.php'>Fazer login</a>";
 } else {
 echo "Erro ao cadastrar: " . $stmt->error;
 }

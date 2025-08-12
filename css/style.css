@@ -12,6 +12,7 @@
 }
 
 .logo{
+    width: 82px;
     padding-left: 100px;
     padding-top: 19px;
 }
@@ -38,6 +39,11 @@
 }
 .form h2{
     font-size: 30px; 
+    font-family: Roboto Condensed;
+    color: #FF6554;
+}
+.form label{
+    font-size: 15px; 
     font-family: Roboto Condensed;
     color: #FF6554;
 }
