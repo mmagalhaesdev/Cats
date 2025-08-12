@@ -36,6 +36,6 @@
         <p><a href="../View/login.php">Já tem conta? <spam style="color: #FFA255"> Faça login </spam> </a></p>
     </div>
 </div>
-<script src="../touggle.js"></script>
+<script src="../Script/touggle.js"></script>
 </body>
 </html>
