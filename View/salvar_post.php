@@ -1,4 +1,5 @@
  <?php
+ date_default_timezone_set('America/Sao_Paulo');
  session_start();
  require '../Model/db.php'; // conexão ao banco
  // Verifica se o usuário está logado

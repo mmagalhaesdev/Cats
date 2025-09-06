@@ -37,16 +37,12 @@ $conn->close();
             padding: 0;
             box-sizing: border-box;
         }
-        .a{
-            padding-left: 70px;
-        }
 
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
+            background-color: #fdfdfdff;
+            height: 100vh;
         }
-      
 
         h1, a {
             padding: 20px;
@@ -56,7 +52,6 @@ $conn->close();
             text-decoration: none;
             color: #007BFF;
         }
-
         .post {
             background: white;
             border: 1px solid #ddd;
@@ -88,27 +83,39 @@ $conn->close();
             font-size: 15px;
         }
 
-        .c {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            width: 100%;
-            max-width: 1200px;
-            margin-top: 30px;
-        }
+    .cont {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        max-width: 1200px;
+        width: 100%;
+        padding-left:20px;
+    }
 
-        .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    .card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
 
-        .card-grande {
-            grid-column: span 2;
-        }
+    .card h3 {
+        margin-bottom: 10px;
+        color: #333;
+    }
 
+    .card p {
+        color: #777;
+    }
+
+    /* Card grande que ocupa 2 colunas e 2 linhas */
+    .card-grande {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
 
     </style>
 </head>
@@ -130,11 +137,12 @@ $conn->close();
     <div class="a">
         <h1>Feed de Posts</h1>
         <a href="../View/novo_post.php">Novo Post</a>
-        
+        <br>
+        <br>
         <?php if (empty($posts)): ?>
             <p>Nenhum post encontrado.</p>
         <?php else: ?>
-            <div class="c">
+            <div class="cont">
                 <?php foreach ($posts as $index => $post): ?>
                     <div class="card <?= ($index === 0 || $index === 3) ? 'card-grande' : '' ?>">
                         <div class="post">
